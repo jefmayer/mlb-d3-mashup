@@ -1,0 +1,13 @@
+<p>This is the about view.</p>
+<div class="select-date">
+	<form>
+		<input type="date" ng-model="datePicker.value" placeholder="yyyy-MM-dd" ng-change="onDateChanged()" />
+	</form>
+</div>
+<div class="games">
+	<table>
+		<tr class="game-info" ng-repeat="game in games">
+			<td class="home-team">{{game.home_team_name}} vs. {{game.away_team_name}} @ {{game.event_time}}</td>
+		</tr>
+	</table>
+</div>
